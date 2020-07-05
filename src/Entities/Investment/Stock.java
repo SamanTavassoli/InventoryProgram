@@ -11,7 +11,7 @@ public class Stock implements InvestmentItem {
 
     private final String NAME;
     private final int VALUE; // can be any value the player wants to buy
-    private final double INTEREST_RATE;
+    private final double INTEREST_RATE; // in %
     private final Date DATE_OF_PURCHASE;
     private final Player OWNER;
 

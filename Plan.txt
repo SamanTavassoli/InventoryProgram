@@ -16,8 +16,9 @@ Players can purchase bonds and depending on how much time has passed since they 
 - create bond entities in an investment package in entities package - done
 - create a bond holder map of player to bonds - done
 - bond return calculator based on time spent
+- add volatility to different investment items
 
-Put project on github so that I can see the progress over time
+Put project on github so that I can see the progress over time - done
 
 Players can invest in other players and agreeing on a return amount and a return date, they place items as collateral and if they don’t pay the agreed amount the items are given to the other player
 - exchange centre

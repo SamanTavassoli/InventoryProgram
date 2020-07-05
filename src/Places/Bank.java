@@ -20,10 +20,10 @@ public class Bank {
     // testing a bond made at a previous date to obtain days in between and money returned
     private static void testDateAndReturn() {
 
-        investmentItemsGivenOut.add(new Bond("Example Bond", 500, 1.1, new Date(), new Player("Bud", 100)));
+        investmentItemsGivenOut.add(new Bond("Example Bond", 100, 2.7, new Date(), new Player("Bud", 100)));
 
         InvestmentItem investmentItem = investmentItemsGivenOut.get(0);
-        Date date = new GregorianCalendar(2020, Calendar.FEBRUARY, 11).getTime();
+        Date date = new GregorianCalendar(2019, Calendar.JULY, 5).getTime();
         investmentItem.getDATE_OF_PURCHASE().setTime(date.getTime());
 
         System.out.println("Days held: " + calculateDaysHeld(investmentItem));
@@ -44,25 +44,32 @@ public class Bank {
      * - the date of purchase
      * - the amount purchased
      * - the interest rate on the item
-     * - compounded annually
+     *
+     * This rounds the amount you get down so a 2.7% return is actually 2%
      *
      * @param investmentItem item who's return is calculated
      * @return the amount of money that should be credited to the player including the price
      */
     public static int calculateReturn(InvestmentItem investmentItem) {
-        //TODO: fix this it's not working properly
-        int principal = investmentItem.getVALUE();
-        double interestRate = investmentItem.getINTEREST_RATE();
-        double yearsInvested = (double) calculateDaysHeld(investmentItem) / 365;
-        int compoundTimes = 1; // per year (compounded annually)
 
-        System.out.println(principal);
-        System.out.println(interestRate);
-        System.out.println(yearsInvested);
-        System.out.println(compoundTimes);
+        double principal = investmentItem.getVALUE();
+        double r = investmentItem.getINTEREST_RATE(); // interest rate
+        double t = (double) calculateDaysHeld(investmentItem) / 365; // years invested
 
-        // compound interest formula (did not subtract initial amount)
-        return (int) (principal * ( Math.pow( 1.0 + (interestRate / yearsInvested), yearsInvested * (double) compoundTimes)));
+        double finalAmount = principal;
+        int yearsAccountedFor = 0;
+        // calculate yearly increase for each whole year passed
+        for (int i = (int) t; i > 0; i-- ) {
+            yearsAccountedFor++;
+            finalAmount += finalAmount * r / 100;
+        }
+        double remainingTime = t - yearsAccountedFor; // should be less than 1
+
+        // calculate increase in the remaining time which is less than a year
+        finalAmount += finalAmount * r / 100 * remainingTime;
+
+        return (int) finalAmount; // TODO: get correct interest rate back not rounded down amount
+
     }
 
     /**
