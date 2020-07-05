@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1ac76-fd25-4486-80c7-6e1e1c66807d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/BankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Plan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Investment/Bond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Investment/Bond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Investment/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Investment/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InventoryProgram/Places/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InventoryProgram/Places/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/InventoryProgram/TransactionManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/InventoryProgram/TransactionManagerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Places/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Places/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TransactionManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TransactionManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Bank">
+  <component name="RunManager" selected="JUnit.BankTest">
     <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Places.Bank" />
       <module name="InventoryProgram" />
@@ -64,9 +63,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryProgram" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testRedeem" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testRedeem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryProgram" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testRedeem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,10 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.BankTest.testRedeem" />
         <item itemvalue="Application.Bank" />
         <item itemvalue="JUnit.TransactionManagerTest.testSendItem" />
         <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -129,10 +142,10 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="433" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.807@0.23.1440.807" timestamp="1593600520341" />
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1593964058350">
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1593967428051">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.23.1440.807@0.23.1440.807" timestamp="1593964058350" />
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.23.1440.807@0.23.1440.807" timestamp="1593967428051" />
     <state x="277" y="359" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593784613937">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
@@ -153,22 +166,22 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="482" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.807@0.23.1440.807" timestamp="1593431965830" />
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1593966269207">
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1593969974247">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1593966269207" />
-    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1593966269206">
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1593969974247" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1593969974246">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1593966269206" />
-    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1593966269205">
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1593969974246" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1593969974246">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1593966269205" />
-    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1593966269206">
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1593969974246" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1593969974246">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1593966269206" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1593969974246" />
     <state x="424" y="327" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593607014228">
       <screen x="0" y="23" width="1440" height="807" />
     </state>

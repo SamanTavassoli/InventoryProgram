@@ -24,3 +24,4 @@ Create methods for redeeming investment items
 Add to github
 Create Stock class
 Improve calculateReturn in Bank
+Add tests for Bank methods

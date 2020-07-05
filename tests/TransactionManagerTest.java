@@ -15,24 +15,9 @@ public class TransactionManagerTest {
 
     @Before
     public void setup() {
-        players = new Player[]{
-                new Player("妹", 1),
-                new Player("弟", 2),
-                new Player("姉", 3),
-                new Player("兄", 4)};
-
+        players = TestItems.getPlayers();
         items = new ArrayList<>();
-        items.addAll(Arrays.asList(
-                new Item("名刺"),
-                new Item("ケータイ"),
-                new Item("スマホ"),
-                new Item("電子"),
-                new Item("ノート"),
-                new Item("紙"),
-                new Item("手帳"),
-                new Item("ボールペン"),
-                new Item("シャープペンシル"),
-                new Item("鉛筆")));
+        items.addAll(Arrays.asList(TestItems.getTestItems()));
     }
 
     private void clearPlayerInventories() {
