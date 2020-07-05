@@ -19,3 +19,7 @@ Create methods for redeeming investment items
 - calculate amount due
     - use Date
     - compound interest calculation - unfinished
+
+05/06/20
+Add to github
+Create Stock class

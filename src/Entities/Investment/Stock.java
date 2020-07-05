@@ -5,9 +5,9 @@ import Entities.Player;
 import java.util.Date;
 
 /**
- * Bonds are investment items that have low volatility and low return
+ * Stocks are investment items that have high volatility and high return
  */
-public class Bond implements InvestmentItem {
+public class Stock implements InvestmentItem {
 
     private final String NAME;
     private final int VALUE; // can be any value the player wants to buy
@@ -15,8 +15,7 @@ public class Bond implements InvestmentItem {
     private final Date DATE_OF_PURCHASE;
     private final Player OWNER;
 
-
-    public Bond(String name, int value, double interest_rate, Date dateOfPurchase, Player owner) {
+    public Stock(String name, int value, double interest_rate, Date dateOfPurchase, Player owner) {
         NAME = name;
         VALUE = value;
         INTEREST_RATE = interest_rate;
@@ -48,4 +47,6 @@ public class Bond implements InvestmentItem {
     public Player getOWNER() {
         return OWNER;
     }
+
+
 }
