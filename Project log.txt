@@ -1,0 +1,21 @@
+29/06/20
+Start the project, make Entities.Player, Places.Shop, TransactionManager and Entities.Item classes.
+Add some functions to manipulate players' inventories.
+Start working on buying from shop and sending items through transaction manager
+
+01/07/20
+Finish buy feature in shop
+Create printStock method in shop
+Test the features through main - done
+Create Junit test for TransactionManager.sendItem
+Create Bank
+Create Entities and Places Package
+
+03/07/20
+Create Entities/Investment package, InvestmentItem interface and Bond class
+Create ArrayList for storing players' purchases of investment items and an "expired investment items" array list
+Create methods for redeeming investment items
+- redeem method
+- calculate amount due
+    - use Date
+    - compound interest calculation - unfinished

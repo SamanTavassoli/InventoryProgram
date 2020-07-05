@@ -1,0 +1,32 @@
+Project 1 - Inventory system
+
+We can initialise different players with money balance, empty inventory of items - done
+We can initialise different items - done
+
+Players can send each other items -> call transaction manager - done
+Players can throw away items - done
+Players can buy items for shop prices -> call shop - done
+
+Players have a limit of items they can hold - 10 - done
+
+-> interesting path is investing type of thing
+
+Players can purchase bonds and depending on how much time has passed since they bought them they can get a certain amount of money back
+- create a bank - done
+- create bond entities in an investment package in entities package - done
+- create a bond holder map of player to bonds - done
+- bond return calculator based on time spent
+
+Put project on github so that I can see the progress over time
+
+Players can invest in other players and agreeing on a return amount and a return date, they place items as collateral and if they don’t pay the agreed amount the items are given to the other player
+- exchange centre
+- player creates contract and other player accepts
+- when time of trade arrives the trade is automatically carried out by exchange centre and calculations are made
+
+There are different cities - players can move to each city
+Players can buy plots of land in each city of varying size at different prices
+
+—
+for the future
+- display the players and their inventory, shop and available items
