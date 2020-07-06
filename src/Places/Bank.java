@@ -4,6 +4,7 @@ import Entities.Investment.InvestmentItem;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Bank {
@@ -86,7 +87,16 @@ public class Bank {
         // calculate yearly increase for each whole year passed
         for (int i = (int) t; i > 0; i-- ) {
             yearsAccountedFor++;
-            finalAmount += finalAmount * r / 100;
+
+            // Adjusting for the volatility of the investment
+            Random random = new Random();
+            double rAdjustedForVolatility = random.nextGaussian() // random normal distribution value with std dev of 1
+                    *investmentItem.getVolatility() // multiply by investment item's std dev
+                    + r; // add the mean
+            System.out.println(r);
+            System.out.println(rAdjustedForVolatility);
+
+            finalAmount += finalAmount * rAdjustedForVolatility / 100;
         }
         double remainingTime = t - yearsAccountedFor; // should be less than 1
 

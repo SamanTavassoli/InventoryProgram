@@ -15,4 +15,6 @@ public interface InvestmentItem {
     public Date getDATE_OF_PURCHASE();
 
     public Player getOWNER();
+
+    public double getVolatility();
 }

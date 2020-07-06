@@ -14,14 +14,16 @@ public class Bond implements InvestmentItem {
     private final double INTEREST_RATE; // in %
     private final Date DATE_OF_PURCHASE;
     private final Player OWNER;
+    private final double VOLATILITY; // Standard deviation of interest rate
 
 
-    public Bond(String name, int value, double interest_rate, Date dateOfPurchase, Player owner) {
+    public Bond(String name, int value, double interest_rate, Date dateOfPurchase, Player owner, double volatility) {
         NAME = name;
         VALUE = value;
         INTEREST_RATE = interest_rate;
         DATE_OF_PURCHASE = dateOfPurchase;
         OWNER = owner;
+        VOLATILITY = volatility;
     }
 
     @Override
@@ -47,5 +49,10 @@ public class Bond implements InvestmentItem {
     @Override
     public Player getOWNER() {
         return OWNER;
+    }
+
+    @Override
+    public double getVolatility() {
+        return VOLATILITY;
     }
 }

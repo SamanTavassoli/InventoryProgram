@@ -24,10 +24,10 @@ public class BankTest {
         // adding some stocks and bonds taken out by each player
         Date date = new GregorianCalendar(2019, Calendar.JULY, 5).getTime();
         investmentItems = new InvestmentItem[]{
-                new Bond("First Bond", 100, 2.7, date, player),
-                new Stock("First Stock", 100, 8.6, date, player),
-                new Bond("Second Bond", 500, 2.7, date, player),
-                new Stock("Second Stock", 500, 8.6, date, player)
+                new Bond("First Bond", 100, 2.7, date, player, 1.0),
+                new Stock("First Stock", 100, 8.6, date, player, 6.0),
+                new Bond("Second Bond", 500, 2.7, date, player, 1.0),
+                new Stock("Second Stock", 500, 8.6, date, player, 6.0)
         };
     }
 
@@ -38,8 +38,8 @@ public class BankTest {
         assertFalse("Item that should not have been able to be redeemed", Bank.redeem(investmentItems[0]));
 
         // returns true when redeeming an item that has been given out
-        Bank.invest(investmentItems[0]);
-        assertTrue("Item should have been redeemed", Bank.redeem(investmentItems[0]));
+        Bank.invest(investmentItems[1]);
+        assertTrue("Item should have been redeemed", Bank.redeem(investmentItems[1]));
 
         Bank.clearInvestmentItemsGivenOut();
 

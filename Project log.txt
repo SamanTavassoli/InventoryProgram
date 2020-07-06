@@ -20,8 +20,12 @@ Create methods for redeeming investment items
     - use Date
     - compound interest calculation - unfinished
 
-05/06/20
+05/07/20
 Add to github
 Create Stock class
 Improve calculateReturn in Bank
 Add tests for Bank methods
+
+06/07/20
+Create volatility field for investment item interface and implement it
+Change calculateReturn to account for volatility by adjusting yearly interest rate
