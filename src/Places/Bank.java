@@ -78,33 +78,34 @@ public class Bank {
      */
     public static int calculateReturn(InvestmentItem investmentItem) {
 
-        double principal = investmentItem.getVALUE();
-        double r = investmentItem.getINTEREST_RATE(); // interest rate
         double t = (double) calculateDaysHeld(investmentItem) / 365; // years invested
+        double finalAmount = investmentItem.getVALUE();
 
-        double finalAmount = principal;
-        int yearsAccountedFor = 0;
         // calculate yearly increase for each whole year passed
+        int yearsAccountedFor = 0;
         for (int i = (int) t; i > 0; i-- ) {
             yearsAccountedFor++;
-
-            // Adjusting for the volatility of the investment
-            Random random = new Random();
-            double rAdjustedForVolatility = random.nextGaussian() // random normal distribution value with std dev of 1
-                    *investmentItem.getVolatility() // multiply by investment item's std dev
-                    + r; // add the mean
-            System.out.println(r);
-            System.out.println(rAdjustedForVolatility);
-
-            finalAmount += finalAmount * rAdjustedForVolatility / 100;
+            double interestRateAdjustedForVolatility = getInterestRateAdjustedForVolatility(investmentItem);
+            finalAmount += finalAmount * interestRateAdjustedForVolatility / 100; // add the year's profit or loss
         }
-        double remainingTime = t - yearsAccountedFor; // should be less than 1
+        double remainingTime = t - yearsAccountedFor; // less than 1
 
         // calculate increase in the remaining time which is less than a year
-        finalAmount += finalAmount * r / 100 * remainingTime;
+        finalAmount += finalAmount * getInterestRateAdjustedForVolatility(investmentItem) / 100 * remainingTime;
 
         return (int) finalAmount; // TODO: get correct interest rate back not rounded down amount
+    }
 
+    /**
+     * Makes a random adjustment to an investment item's interest rate based on it's volatility
+     * @param investmentItem item for which an adjusted interest rate is needed
+     * @return the interest rate randomly adjusted based on it's volatility
+     */
+    private static double getInterestRateAdjustedForVolatility(InvestmentItem investmentItem) {
+        Random random = new Random();
+        return random.nextGaussian() // random normal distribution value with std dev of 1
+                * investmentItem.getVolatility() // multiply by investment item's std dev
+                + investmentItem.getINTEREST_RATE();
     }
 
     /**

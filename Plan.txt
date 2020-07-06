@@ -16,7 +16,7 @@ Players can purchase bonds and depending on how much time has passed since they 
 - create a bank - done
 - create bond entities in an investment package in entities package - done
 - create a bond holder map of player to bonds - done
-- bond return calculator based on time spent - done (basic for now)
+- bond return calculator based on time spent - done - Can improve precision of return in the future (rn its an int)
 - add volatility to different investment items - done
 
 4. GitHub
