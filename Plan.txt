@@ -24,8 +24,8 @@ Put project on github so that I can see the progress over time - done
 
 5. Player interaction with each other
 Players can invest in other players and agreeing on a return amount and a return date, they place items as collateral and if they don’t pay the agreed amount the items are given to the other player
-- exchange centre
-- player creates contract and other player accepts
+- exchange centre -> for now anyone can create a contract
+- player creates contract and other player accepts -> tbd
 - when time of trade arrives the trade is automatically carried out by exchange centre and calculations are made
 
 6. Adding location
