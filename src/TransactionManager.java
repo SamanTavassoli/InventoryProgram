@@ -24,4 +24,24 @@ public class TransactionManager {
         player2.addToInventory(item);
         return true;
     }
+
+    /**
+     * Send money from player1 to player2 based on amount provided
+     *
+     * @param player1 player sending the money
+     * @param player2 player receiving the money
+     * @param amount amount being sent
+     * @return true if transaction was successful
+     */
+    public static boolean sendMoney(Player player1, Player player2, int amount) {
+        if (!(player1.getBalance() >= amount)) {
+            return false;
+        }
+
+        player1.subtractFromBalance(amount);
+        player2.addToBalance(amount);
+        return true;
+    }
+
+
 }

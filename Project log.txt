@@ -29,3 +29,7 @@ Add tests for Bank methods
 06/07/20
 Create volatility field for investment item interface and implement it
 Change calculateReturn to account for volatility by adjusting yearly interest rate
+
+08/07/20
+Create sendMoney method in TransactionManager to send money from player to player
+Create Contract Class to create investment agreements between players
