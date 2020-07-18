@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1ac76-fd25-4486-80c7-6e1e1c66807d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entities/Investment/Contract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Plan.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Investment/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Investment/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Places/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Places/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TransactionManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TransactionManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +140,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="92" key="#Notifications" timestamp="1595082169588">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="320" y="92" key="#Notifications/0.23.1440.807@0.23.1440.807" timestamp="1595082169588" />
     <state x="433" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593600520341">
       <screen x="0" y="23" width="1440" height="807" />
     </state>

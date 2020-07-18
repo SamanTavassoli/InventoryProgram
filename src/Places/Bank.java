@@ -77,7 +77,7 @@ public class Bank {
      * @return the amount of money that should be credited to the player including the price
      */
     public static int calculateReturn(InvestmentItem investmentItem) {
-
+        
         double t = (double) calculateDaysHeld(investmentItem) / 365; // years invested
         double finalAmount = investmentItem.getVALUE();
 
@@ -118,11 +118,6 @@ public class Bank {
 
         return (int) daysHeld;
     }
-
-
-    // Investing in other players
-
-
 
 
 

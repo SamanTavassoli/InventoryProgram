@@ -2,6 +2,7 @@ package Entities.Investment;
 
 import Entities.Item;
 import Entities.Player;
+import Utils.TransactionManager;
 
 import java.util.Date;
 
@@ -58,8 +59,7 @@ public class Contract {
         REPAYMENT_DATE = repaymentDate;
 
         player2.removeFromInventory(collateral);
-        player1.subtractFromBalance(initialSum);
-        player2.addToBalance(initialSum);
+        TransactionManager.sendMoney(PLAYER1, PLAYER2, initialSum);
 
         isContractValid = true;
     }
@@ -76,7 +76,15 @@ public class Contract {
         }
     }
 
-    public boolean payBackEarly() throws Exception {
+    /**
+     * Ends the contract if players meet the required conditions
+     *
+     * SHOULD NOT BE CALLED DIRECTLY - call appropriate method in TransactionManager
+     *
+     * @return true if the contract could be terminated by repayment
+     * @throws Exception if contract has already been terminated
+     */
+    public boolean payBackAndEndContract() throws Exception {
         if (!isContractValid) { // should not ever be called in this case
             throw new Exception("This contract has already been terminated");
         }
@@ -87,14 +95,33 @@ public class Contract {
         }
 
         checkPlayerHasSum(PLAYER2, SUM_TO_BE_PAID_BACK);
-        PLAYER2.subtractFromBalance(SUM_TO_BE_PAID_BACK);
-        PLAYER1.addToBalance(SUM_TO_BE_PAID_BACK);
+        TransactionManager.sendMoney(PLAYER2, PLAYER1, SUM_TO_BE_PAID_BACK);
         PLAYER2.addToInventory(COLLATERAL);
 
         // terminate contract
         isContractValid = false;
 
         return true;
+    }
+
+    /**
+     * Tells us if the repayment date has been passed
+     * @return true if repayment date has been passed
+     */
+    public boolean isPastRepaymentDate() {
+        return (new Date()).after(REPAYMENT_DATE);
+    }
+
+    /**
+     * Contract has not been fulfilled so all that can be done is to give
+     * the collateral to player 1 and terminate the contract
+     */
+    public void contractHasNotBeenFulfilled() {
+
+        PLAYER1.addToInventory(COLLATERAL); // todo: what if no inventory space?
+
+        // terminate contract
+        isContractValid = false;
     }
 
 }
