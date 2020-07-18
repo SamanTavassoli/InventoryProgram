@@ -39,7 +39,5 @@ Create payBackEarly method to end a contract early
 Create the option to track a contract in trackedContracts and expiredContracts ArrayLists
 Create Contract management methods to end and check contract dates in Transaction Manager
 Create methods to handle fulfilled and unfulfilled contracts in Contract
-
-todo
-track contracts and create a method that can be called to check
-create tests for contract and any new transaction manager methods
+Add skeletons and todos for tests that need to be implemented for new and prior classes (TransactionManagerTest,
+ContractTest, ShopTest)

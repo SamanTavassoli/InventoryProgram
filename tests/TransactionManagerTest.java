@@ -56,4 +56,24 @@ public class TransactionManagerTest {
         players[1].getInventory().addAll(items);
         testSendItemForCase(bag, false, false, false);
     }
+
+    @Test
+    public void testSendMoney() {
+        // TODO: 18/07/2020 add tests here
+    }
+
+    @Test
+    public void testTrackContract() {
+        // TODO: 18/07/2020 add tests here
+    }
+
+    @Test
+    public void testCheckContracts() {
+        // TODO: 18/07/2020 add tests here
+    }
+
+    @Test
+    public void testEndContracts() {
+        // TODO: 18/07/2020 add tests here
+    }
 }
