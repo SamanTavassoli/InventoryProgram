@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1ac76-fd25-4486-80c7-6e1e1c66807d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/ContractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ShopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TransactionManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TransactionManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Entities/Investment/Bond.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Entities/Investment/InvestmentItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Entities/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Entities/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Places/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/Places/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8. Inventory/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InventoryProgram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InventoryProgram/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InventoryProgram/Places/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InventoryProgram/Places/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InventoryProgram/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/8. Inventory/FirstTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/8. Inventory/TransactionManagerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/InventoryProgram/TransactionManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/InventoryProgram/TransactionManagerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,22 +180,22 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="482" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.807@0.23.1440.807" timestamp="1593431965830" />
-    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1594061875670">
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1595686437145">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1594061875670" />
-    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1594061875670">
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1595686437145" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1595686437144">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1594061875670" />
-    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1594061875669">
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1595686437144" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1595686437144">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1594061875669" />
-    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1594061875670">
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1595686437144" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1595686437145">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1594061875670" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1595686437145" />
     <state x="424" y="327" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593607014228">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
